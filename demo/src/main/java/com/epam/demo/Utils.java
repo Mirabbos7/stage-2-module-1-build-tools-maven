@@ -1,8 +1,16 @@
 package com.epam.demo;
 
+import org.w3c.dom.ls.LSOutput;
+
+import java.util.ArrayList;
 import java.util.List;
 
 public class Utils {
+    public static void main(String[] args) {
+        List<String> list = new ArrayList<>();
+        list.add("-11.1");
+        System.out.println(isAllPositiveNumbers(list));
+    }
     public static boolean isAllPositiveNumbers(List<String> args) {
         for (String s : args) {
             try {
